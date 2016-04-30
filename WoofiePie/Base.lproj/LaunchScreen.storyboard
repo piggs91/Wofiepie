@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="snQ-BC-HNl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="ZXK-w9-0Uh">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="snQ-BC-HNl" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="wwS-Qh-V1P"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRU-Vr-L6Y"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="SoB-ud-dgD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WoofiePie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mP-yN-sD9">
+                                <rect key="frame" x="20" y="274" width="560" height="52"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="find a date for your bowwow!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlv-Nn-S8a">
+                                <rect key="frame" x="20" y="334" width="560" height="28"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titlelogo" translatesAutoresizingMaskIntoConstraints="NO" id="Qv3-eC-6cI">
+                                <rect key="frame" x="255" y="179" width="90" height="90"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="695-Cd-Q2t"/>
+                                    <constraint firstAttribute="height" constant="90" id="wnY-zW-iOi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52721354170000001" green="0.59923058709999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qv3-eC-6cI" firstAttribute="centerX" secondItem="SoB-ud-dgD" secondAttribute="centerX" id="4xq-9j-eCq"/>
+                            <constraint firstItem="4mP-yN-sD9" firstAttribute="leading" secondItem="SoB-ud-dgD" secondAttribute="leadingMargin" id="6fe-8u-DN7"/>
+                            <constraint firstItem="dlv-Nn-S8a" firstAttribute="trailing" secondItem="SoB-ud-dgD" secondAttribute="trailingMargin" id="8jl-M2-3JT"/>
+                            <constraint firstItem="4mP-yN-sD9" firstAttribute="centerY" secondItem="SoB-ud-dgD" secondAttribute="centerY" id="ARK-1z-oT2"/>
+                            <constraint firstItem="dlv-Nn-S8a" firstAttribute="leading" secondItem="SoB-ud-dgD" secondAttribute="leadingMargin" id="B2d-w9-5CP"/>
+                            <constraint firstItem="dlv-Nn-S8a" firstAttribute="top" secondItem="4mP-yN-sD9" secondAttribute="bottom" constant="8" id="LJ5-8n-r8A"/>
+                            <constraint firstItem="4mP-yN-sD9" firstAttribute="top" secondItem="Qv3-eC-6cI" secondAttribute="bottom" constant="5" id="Ss6-Zt-OJC"/>
+                            <constraint firstItem="4mP-yN-sD9" firstAttribute="trailing" secondItem="SoB-ud-dgD" secondAttribute="trailingMargin" id="yRK-zj-0NT"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FkR-BA-0xm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="148" y="502"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="titlelogo" width="288" height="204"/>
+    </resources>
 </document>

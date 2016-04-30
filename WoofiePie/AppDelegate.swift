@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import BuddySDK
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window?.tintColor = UIColor(red: 134/255, green: 153/255, blue: 255/255, alpha: 1)
+        
+    
         return true
     }
 
